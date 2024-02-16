@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman HTML Saya</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+        }
+        .kiri {
+            width: 20%;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .kanan {
+            width: 70%;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+        ul {
+            list-style-type: none;
+            list-style:  outside;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(25, 25, 120);
+            cursor: pointer;
+            border-bottom: 1px solid rgb(25, 25, 172);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="kiri" id="linkColumn">
+        <ul>
+            <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_1.html')">Halaman 1</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_2.html')">Halaman 2</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_3.html')">Halaman 3</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_4.html')">Halaman 4</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_5.html')">Halaman 5</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_6.html')">Halaman 6</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_7.html')">Halaman 7</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_8.html')">Halaman 8</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_9.html')">Halaman 9</a></b></li>
+                <li><b><a onclick="changeIframeSrc('file:///D:/semester%202/pemograman%20web/html_dasar/latihan_1_10.html')">Halaman 10</a></b></li>
+        </ul>
+    </div>
+    <div class="kanan">
+        <iframe id="iframe" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script>
+    function changeIframeSrc(newSrc) {
+        document.getElementById('iframe').src = newSrc;
+    }
+</script>
+
+</body>
+</html>
